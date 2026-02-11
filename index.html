@@ -1,184 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Filipe Rangel Mota - Desenvolvedor Web">
-    <title>Filipe Rangel Mota | Desenvolvedor</title>
+    <title>Dev.Portfolio | Soluções em Código</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header/Navegação -->
-    <header>
+    <div class="app-container">
+        <!-- Navigation -->
         <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <span class="bracket">&lt;</span>
-                    <span>FRM</span>
-                    <span class="bracket">/&gt;</span>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
+            <div class="logo">&lt;Dev/&gt;</div>
+            <ul class="nav-links">
+                <li><a href="#about">_sobre</a></li>
+                <li><a href="#stack">_stack</a></li>
+                <li><a href="#projects">_projetos</a></li>
+                <li><a href="#contact" class="btn-primary">Fale Comigo</a></li>
+            </ul>
         </nav>
-    </header>
 
-    <!-- Seção Hero -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="glitch" data-text="Filipe Rangel Mota">Filipe Rangel Mota</h1>
-                <p class="subtitle">Desenvolvedor Web <span class="typing">|</span></p>
-                <p class="description">
-                    Transformando ideias em código e criando experiências digitais incríveis.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#servicos" class="btn btn-primary">Meus Serviços</a>
-                    <a href="#contato" class="btn btn-secondary">Entre em Contato</a>
+        <!-- Hero Section: Terminal Style -->
+        <header class="hero">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                    <span class="terminal-title">bash --filip@dev:~/portfolio</span>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="terminal-body">
+                    <p class="comment"># Bem-vindo ao meu espaço de trabalho digital</p>
+                    <p class="command">> <span id="typewriter"></span><span class="cursor">_</span></p>
 
-    <!-- Seção Sobre -->
-    <section id="sobre" class="about">
-        <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-content">
-                <p>
-                    Olá! Sou <strong>Filipe Rangel Mota</strong>, desenvolvedor apaixonado por tecnologia 
-                    e inovação. Com foco em entregar soluções de qualidade, combino criatividade 
-                    e conhecimento técnico para criar projetos que fazem a diferença.
-                </p>
-            </div>
-        </div>
-    </section>
+                    <div class="hero-cta">
+                        <h1>Transformo café em <span class="highlight">código robusto</span> e ideias em <span
+                                class="highlight">produtos reais</span>.</h1>
+                        <p class="sub-hero">Chega de sites lentos e sistemas que quebram. Desenvolvo soluções escaláveis
+                            com foco em performance e experiência do usuário.</p>
 
-    <!-- Seção Habilidades -->
-    <section id="habilidades" class="skills">
-        <div class="container">
-            <h2 class="section-title">Minhas Habilidades</h2>
-            
-            <!-- Habilidades Soft Skills -->
-            <div class="skills-category">
-                <h3>Habilidades Comportamentais</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">💬</div>
-                        <h4>Boa Comunicação</h4>
-                        <p>Comunicação clara e efetiva com equipes e clientes</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🎯</div>
-                        <h4>Comprometimento</h4>
-                        <p>Dedicação total aos projetos e prazos estabelecidos</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">💪</div>
-                        <h4>Esforço</h4>
-                        <p>Persistência e determinação para superar desafios</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Habilidades Técnicas -->
-            <div class="skills-category">
-                <h3>Habilidades Técnicas</h3>
-                <div class="tech-skills">
-                    <div class="tech-item">
-                        <div class="tech-name">Python</div>
-                        <div class="tech-bar">
-                            <div class="tech-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-name">JavaScript</div>
-                        <div class="tech-bar">
-                            <div class="tech-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-name">HTML & CSS</div>
-                        <div class="tech-bar">
-                            <div class="tech-progress" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-name">React</div>
-                        <div class="tech-bar">
-                            <div class="tech-progress" style="width: 80%"></div>
+                        <div class="cta-buttons">
+                            <a href="#projects" class="btn-outline">Ver Projetos</a>
+                            <a href="#contact" class="btn-solid">Solicitar Orçamento</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Seção Serviços -->
-    <section id="servicos" class="services">
-        <div class="container">
-            <h2 class="section-title">Meus Serviços</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>Landing Pages</h3>
-                    <p>
-                        Páginas de alta conversão, otimizadas e responsivas para 
-                        impulsionar seu negócio online.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Progressive Web Apps</h3>
-                    <p>
-                        Aplicações web modernas que funcionam como apps nativos, 
-                        com performance superior.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🤖</div>
-                    <h3>Integração com IA</h3>
-                    <p>
-                        Soluções inteligentes com integração de APIs de IA para 
-                        automatizar e otimizar processos.
-                    </p>
+        <!-- About Section: Readme Style -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-book"></i> README.md</h2>
+                <div class="readme-card">
+                    <div class="readme-header">
+                        <span>filip / sobre-mim</span>
+                    </div>
+                    <div class="readme-content">
+                        <h3>### Quem sou eu</h3>
+                        <p>Sou um desenvolvedor full-stack apaixonado por resolver problemas complexos com simplicidade.
+                            Minha missão é ajudar empresas e empreendedores a elevar o nível de sua presença digital.
+                        </p>
+                        <br>
+                        <h3>### O que eu faço</h3>
+                        <ul>
+                            <li>- Desenvolvimento de sites de alta performance</li>
+                            <li>- Aplicações Web Modernas (React/Next.js)</li>
+                            <li>- APIs RESTful e Integrações</li>
+                            <li>- Otimização de Performance (SEO & Core Web Vitals)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="contact">
-        <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
-            <div class="contact-content">
-                <p>Vamos trabalhar juntos? Entre em contato e vamos transformar suas ideias em realidade!</p>
-                <div class="contact-links">
-                    <a href="mailto:seu-email@exemplo.com" class="contact-btn">
-                        📧 Email
-                    </a>
-                    <a href="https://github.com/seu-usuario" target="_blank" class="contact-btn">
-                        💻 GitHub
-                    </a>
-                    <a href="https://linkedin.com/in/seu-perfil" target="_blank" class="contact-btn">
-                        💼 LinkedIn
-                    </a>
+        <!-- Tech Stack -->
+        <section id="stack" class="section">
+            <div class="container">
+                <h2 class="section-title">package.json</h2>
+                <p class="section-subtitle">"dependencies": {</p>
+
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="fab fa-html5"></i>
+                        <span>"HTML5": "latest"</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>"CSS3": "latest"</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-js"></i>
+                        <span>"JavaScript": "ES6+"</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-react"></i>
+                        <span>"React": "^18.2.0"</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-node-js"></i>
+                        <span>"Node.js": "v20.x"</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database"></i>
+                        <span>"SQL": "active"</span>
+                    </div>
+                </div>
+
+                <p class="section-subtitle">}</p>
+            </div>
+        </section>
+
+        <!-- Projects: Repositories -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">git log --oneline</h2>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-folder"></i>
+                            <a href="#" class="project-link">landing-page-ultra</a>
+                            <span class="badge public">Public</span>
+                        </div>
+                        <p class="project-desc">Landing page de alta conversão para startup de finanças. Performance
+                            100/100 no Lighthouse.</p>
+                        <div class="project-tags">
+                            <span class="tag">
+                                <div class="lang-color js"></div> JavaScript
+                            </span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-folder"></i>
+                            <a href="#" class="project-link">ecommerce-dashboard</a>
+                            <span class="badge public">Public</span>
+                        </div>
+                        <p class="project-desc">Painel administrativo completo com gráficos em tempo real e gestão de
+                            estoque.</p>
+                        <div class="project-tags">
+                            <span class="tag">
+                                <div class="lang-color react"></div> React
+                            </span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-folder"></i>
+                            <a href="#" class="project-link">api-integrator</a>
+                            <span class="badge public">Public</span>
+                        </div>
+                        <p class="project-desc">Serviço de integração entre gateways de pagamento e ERPs legados.</p>
+                        <div class="project-tags">
+                            <span class="tag">
+                                <div class="lang-color node"></div> TypeScript
+                            </span>
+                            <span class="tag">Express</span>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Filipe Rangel Mota. Todos os direitos reservados.</p>
-            <p class="footer-code">Desenvolvido com 💙 e muito ☕</p>
-        </div>
-    </footer>
+        <!-- CTA / Contact -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="terminal-window small">
+                    <div class="terminal-header">
+                        <span class="terminal-title">contact.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="comment"># Vamos construir algo incrível juntos?</p>
+                        <p class="command">$ ./iniciar-projeto.sh --email="seu-email@aqui.com"</p>
+
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">const nome = </label>
+                                <input type="text" id="name" placeholder='"Seu Nome";'>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">const email = </label>
+                                <input type="email" id="email" placeholder='"seu@email.com";'>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">const mensagem = `</label>
+                                <textarea id="message" placeholder="Descreva seu projeto aqui..."></textarea>
+                                <span class="closing-tick">`;</span>
+                            </div>
+                            <button type="submit" class="btn-submit">console.log("Enviar");</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>echo "© 2026 Desenvolvido com <i class="fas fa-heart"></i> e ☕"</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
